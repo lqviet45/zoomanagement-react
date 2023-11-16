@@ -1,0 +1,29 @@
+.navigation-wrapper{
+   display: flex;
+   font-size: 1rem;
+}
+.navigation-list__left{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+ul li{
+    list-style-type: none;
+}
+.navigation-list__right{
+    display: flex;
+    flex-direction: column;
+}
+.navigation-list__logo{
+    color: #3C5724;
+}
+.navigation_comment{
+    color: #f5f0d7;
+}
+.navigation__link{
+    text-decoration: none;
+    color: #000;
+}
+.navigation__title{
+    font-size: 1.3rem;
+}

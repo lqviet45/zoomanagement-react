@@ -1,0 +1,70 @@
+.home-page__view{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.home-view__bottom{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home-view-bottom__btn{
+    display: flex;
+    flex-direction: column; /* Ensure this is set to column */
+    align-items: center; /* Optional: Align items in the center */
+    justify-content: center; /* Optional: Justify content in the center */
+    margin-bottom: 5px;
+    z-index: 2;
+}
+.home-view-bottom__logo{
+    justify-content: center;
+    display: flex;
+    top: 0;
+    margin-bottom: 3px;
+}
+.home-view-bottom__btn-bottom{
+    color: #3C5724;
+    background-color: #F0E9C4;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    outline:none;
+    z-index: 2;
+    
+}
+.home-view-bottom__table{
+    width: 50%;
+    background-color:white;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+@media (max-width: 767px) {
+    .home-view-bottom__table {
+        width: 40%; /* Make the table full width for small screens */
+        padding: 10px; /* Adjust padding as needed for smaller screens */
+    }
+}

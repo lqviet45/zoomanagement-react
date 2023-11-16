@@ -1,14 +1,31 @@
-import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import "./Home.css";
-import TigerImg from "../../assets/Tigerbackground.png";
-import WebLogo from "../../assets/WebLogo.png";
-import MapLogo from "../../assets/MapLogo.png";
+import React, {useMemo} from "react";
+import Welcome from "./WelcomePage/Welcome";
+import HomeView from "./HomeView/HomeView";
+import WelcomeMap from "./HomeMap/WelcomeMap";
+import WelcomeNews from "./HomeNews/WelcomeNews";
+import WelcomeText from "./WelcomePage/WelcomeText";
 const Home = () => {
+    useMemo(() => {
+        window.scrollTo({top: 0})
+      },)
     return (
         <>
-            <h1>Hello</h1>
+            <div className="vh-100">
+                <HomeView />
+            </div>
+            <WelcomeText />
+            <div style={{
+                backgroundColor: '#8b9472',
+            }}>
+            <Welcome />
+            </div>
+            <div style={{
+                backgroundColor: '#F7F1DB',
+            }}>
+                <WelcomeMap />
+
+                <WelcomeNews />
+            </div >
         </>
     );
 };
